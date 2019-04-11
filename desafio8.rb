@@ -1,15 +1,20 @@
 # crear programa para que busque la cantidad de veces que se demoraria
 # en tener la "password"
 
+j = ARGV[0]
 
-n = ARGV[0].to_i
-
+# parte con la letra "a" y parte con el contador en 0
 letra = "a"
-acumulador = ""
+contador = 0
 
-n.times do |i|
-   acumulador += letra
+while letra != j
+   
    letra = letra.next
+   contador += 1
  end
 
-  
+    puts "#{contador} intentos"
+
+
+# times es cuando sabemos cantidad de ciclos
+# while lo descubre
